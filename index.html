@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5.3.7 Project</title>
+    <title>Alnuzala – Find Your Perfect Stay</title>
 
     <!-- Google Fonts - Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -23,380 +22,241 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top navbar-dynamic">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container px-4 px-xl-5">
-            <a class="navbar-brand fw-900 fs-2" href="#home">Navora</a>
+            <a class="navbar-brand fw-bold fs-2" href="#hero">Alnuzala</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto column-gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#features">Institute</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#mentoring-tools">Mentor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#student-access">Student</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#testimonials">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="btn btn-plan"><i class="bi bi-telephone me-1"></i> Contact Us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#why">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="mt-5 py-4 py-lg-5">
+    <section id="hero" class="py-5 mt-5 bg-light">
         <div class="container px-4 px-xl-5">
             <div class="row align-items-center gy-5">
-                <div class="col-lg-7" data-aos="fade-right">
-                    <h1 class="display-3 lh-sm mb-4 text-dark fw-900">Effortlessly Launch Your Institute's Learning
-                        Platform
-                    </h1>
-                    <p class="lead text-muted mb-4">
-                        Create a centralized academic hub with integrated courses,
-                        mentors, students, and real-time engagement tools.
-                    </p>
-                    <a href="#contact" class="btn btn-plan btn-lg"><i class="bi bi-telephone me-1"></i> Contact Us</a>
-                </div>
-                <div class="col-lg-5 text-center" data-aos="fade-left">
-                    <img src="./assets/images/home-video-thumbnail-why-choose-lifterlms.jpg" alt="Product Screenshot"
-                        class="img-fluid">
-                </div>
-            </div>
-
-            <!-- Stats Section -->
-            <div class="text-center pt-5 pb-2" data-aos="fade-up">
-                <div class="row gy-4">
-                    <div class="col-6 col-md-3">
-                        <h2 class="fs-1 text-dark">8.3 million+</h2>
-                        <p class="fs-6 fw-normal text-muted">Enrollments</p>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h2 class="fs-1 text-dark">12.5 million+</h2>
-                        <p class="fs-6 fw-normal text-muted">Courses & Lessons Completed</p>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h2 class="fs-1 text-dark">186,900+</h2>
-                        <p class="fs-6 fw-normal text-muted">Achievements Awarded</p>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h2 class="fs-1 text-dark">310,000+</h2>
-                        <p class="fs-6 fw-normal text-muted">Certificates Earned</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trusted by Section -->
-            <div class="text-center mt-5 bg-light py-5 px-4 rounded-3" data-aos="zoom-in">
-                <h4 class="fw-medium mb-4">Trusted by millions of loyal fans and these fine companies:</h4>
-                <div class="text-center">
-                    <img src="./assets/images/Who-Uses-LifterLMS-2048x224.png" alt="Trusted Companies"
-                        class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Institute-Based Learning Section -->
-    <section id="features" class="py-4 py-lg-5 bg-white">
-        <div class="container px-4 px-xl-5">
-            <div class="mb-5" data-aos="fade-up">
-                <h2 class="display-5 text-dark fw-900 fw-900 fw-900">Institute-Based Learning Made Simple</h2>
-            </div>
-            <div class="row align-items-center g-5">
-                <!-- Left Column: Features -->
                 <div class="col-lg-6" data-aos="fade-right">
-                    <div class="d-flex flex-column gap-5">
-                        <!-- Feature Item -->
-                        <div class="d-flex flex-column align-items-start gap-2 feature-item-hover">
-                            <i class="bi bi-journal-bookmark-fill fs-1 text-primary"></i>
-                            <div>
-                                <h4 class="text-dark">Online Courses</h4>
-                                <p class="text-muted mb-0">Design structured courses with videos, documents, quizzes,
-                                    and assessments.</p>
-                            </div>
-                        </div>
-                        <!-- Feature Item -->
-                        <div class="d-flex flex-column align-items-start gap-2 feature-item-hover">
-                            <i class="bi bi-person-video3 fs-1 text-primary"></i>
-                            <div>
-                                <h4 class="text-dark">Assign Mentors</h4>
-                                <p class="text-muted mb-0">Easily assign mentors to manage specific courses and guide
-                                    individual students.</p>
-                            </div>
-                        </div>
-                        <!-- Feature Item -->
-                        <div class="d-flex flex-column align-items-start gap-2 feature-item-hover">
-                            <i class="bi bi-people-fill fs-1 text-primary"></i>
-                            <div>
-                                <h4 class="text-dark">Assign Students</h4>
-                                <p class="text-muted mb-0">Enroll students into courses and pair them with dedicated
-                                    mentors for personalized learning.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#contact" class="btn btn-plan btn-lg"><i class="bi bi-telephone me-1"></i> Contact
-                                Us</a>
-                        </div>
-                    </div>
+                    <h1 class="display-4 fw-bold mb-3">Find Your Perfect Stay. <span class="text-primary">Anywhere,
+                            Anytime.</span></h1>
+                    <p class="lead text-muted mb-4">Discover handpicked hotels, resorts, and vacation homes for every
+                        journey — from weekend getaways to luxury escapes.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Contact</a>
                 </div>
-                <!-- Right Column: Image -->
-                <div class="col-lg-6" data-aos="fade-left">
-                    <img src="./assets/images/lifterlms-course-template-splash.jpg" alt="Online Courses"
-                        class="img-fluid">
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                        alt="Happy travelers" class="img-fluid rounded-4 shadow">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Powerful Mentoring Tools Section -->
-    <section id="mentoring-tools" class="py-4 py-lg-5 bg-light">
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
         <div class="container px-4 px-xl-5">
-            <div class="mb-5" data-aos="fade-up">
-                <h2 class="display-5 text-dark fw-900 fw-900 fw-900">Powerful Mentoring Tools</h2>
-            </div>
-            <div class="row align-items-center g-5">
-                <!-- Right Column: Features -->
-                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
-                    <div class="d-flex flex-column gap-5">
-                        <!-- Feature Item -->
-                        <div class="d-flex flex-column align-items-start gap-2 feature-item-hover">
-                            <i class="bi bi-calendar2-check-fill fs-1 text-primary"></i>
-                            <div>
-                                <h4 class="text-dark">Schedule Meetings</h4>
-                                <p class="text-muted mb-0">Enable mentors to schedule group classes or one-on-one
-                                    doubt-clearing sessions.</p>
-                            </div>
-                        </div>
-                        <!-- Feature Item -->
-                        <div class="d-flex flex-column align-items-start gap-2 feature-item-hover">
-                            <i class="bi bi-list-task fs-1 text-primary"></i>
-                            <div>
-                                <h4 class="text-dark">Assign Tasks</h4>
-                                <p class="text-muted mb-0">Mentors can assign tasks, set deadlines, and monitor student
-                                    performance in real-time.</p>
-                            </div>
-                        </div>
-                        <!-- Feature Item -->
-                        <div class="d-flex flex-column align-items-start gap-2 feature-item-hover">
-                            <i class="bi bi-pencil-square fs-1 text-primary"></i>
-                            <div>
-                                <h4 class="text-dark">Create Quizzes & Assessments</h4>
-                                <p class="text-muted mb-0">Design custom quizzes, assessments, and exams to evaluate
-                                    student understanding.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-plan btn-lg"><i class="bi bi-box-arrow-in-right me-1"></i> Mentor
-                                Login</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Left Column: Image -->
-                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                    <img src="./assets/images/lifterlms-access-plan-splash-blue-bg-1536x1295.jpg" alt="Mentoring Tools"
-                        class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seamless Student Access Section -->
-    <section id="student-access" class="py-4 py-lg-5 bg-white">
-        <div class="container px-4 px-xl-5">
-            <div class="mb-5" data-aos="fade-up">
-                <h2 class="display-5 text-dark fw-900 fw-900 fw-900">Seamless Student Access</h2>
-            </div>
-            <div class="row align-items-center g-5">
-                <!-- Left Column: Features -->
+            <div class="row align-items-center gy-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <div class="d-flex flex-column gap-5">
-                        <!-- Feature Item -->
-                        <div class="d-flex flex-column align-items-start gap-2 feature-item-hover">
-                            <i class="bi bi-file-earmark-play-fill fs-1 text-primary"></i>
-                            <div>
-                                <h4 class="text-dark">Interactive Course Content</h4>
-                                <p class="text-muted mb-0">Students can access materials, submit assignments, and
-                                    complete quizzes with ease.</p>
-                            </div>
-                        </div>
-                        <!-- Feature Item -->
-                        <div class="d-flex flex-column align-items-start gap-2 feature-item-hover">
-                            <i class="bi bi-calendar-plus-fill fs-1 text-primary"></i>
-                            <div>
-                                <h4 class="text-dark">Book Mentoring Sessions</h4>
-                                <p class="text-muted mb-0">Students can request meetings with mentors for guidance or
-                                    clarification.</p>
-                            </div>
-                        </div>
-                        <!-- Feature Item -->
-                        <div class="d-flex flex-column align-items-start gap-2 feature-item-hover">
-                            <i class="bi bi-patch-check-fill fs-1 text-primary"></i>
-                            <div>
-                                <h4 class="text-dark">Earn Certifications</h4>
-                                <p class="text-muted mb-0">Award certificates to students upon successful course
-                                    completion to recognize their achievement.</p>
-                            </div>
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                        alt="About Alnuzala" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="fw-bold mb-3">About Alnuzala</h2>
+                    <p class="mb-4">At Alnuzala, we believe your travel experience begins the moment you search for a
+                        place to stay. With years of experience in the hospitality industry, we've earned the trust of
+                        thousands of travelers by offering clean, secure, and carefully selected hotels that meet high
+                        standards of comfort and quality. Our award-winning customer service team is available 24/7 to
+                        assist you with anything you need — from booking to check-out.</p>
+                    <div class="d-flex gap-4">
+                        <div>
+                            <h3 class="text-primary fw-bold mb-0">5+</h3>
+                            <div class="text-muted">years of experience</div>
                         </div>
                         <div>
-                            <a href="#" class="btn btn-plan btn-lg"><i class="bi bi-box-arrow-in-right me-1"></i>
-                                Student Login</a>
+                            <h3 class="text-primary fw-bold mb-0">24/7</h3>
+                            <div class="text-muted">Customer Support</div>
                         </div>
                     </div>
-                </div>
-                <!-- Right Column: Image -->
-                <div class="col-lg-6" data-aos="fade-left">
-                    <img src="./assets/images/lifterlms-certificate-splash.jpg" alt="Student Certification"
-                        class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-4 py-lg-5 bg-dark text-white">
+    <!-- Why Book With Us Section -->
+    <section id="why" class="py-5 bg-light">
         <div class="container px-4 px-xl-5">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="display-5">Get in Touch</h2>
-                <p class="lead mb-4">We'd love to hear from you. Here's how you can reach us.</p>
+                <h2 class="fw-bold">Why Book With Us?</h2>
             </div>
-            <div class="row gx-5 justify-content-center">
-                <!-- Email Contact -->
-                <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-center">
-                        <i class="bi-envelope-fill fs-1 mb-3"></i>
-                        <h4 class="fw-medium">Email</h4>
-                        <p class="text-white-50">Send us an email for any inquiries.</p>
-                        <a href="mailto:support@example.com"
-                            class="text-primary text-decoration-none">support@example.com</a>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-patch-check-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-2">Verified Listings</h5>
+                            <p class="text-muted">Every hotel and home is carefully reviewed and approved to ensure
+                                quality, safety, and comfort. You can book confidently knowing you're choosing from
+                                trusted stays only.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Phone Contact -->
-                <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-center">
-                        <i class="bi-telephone-fill fs-1 mb-3"></i>
-                        <h4 class="fw-medium">Phone</h4>
-                        <p class="text-white-50">Give us a call during business hours.</p>
-                        <a href="tel:+1234567890" class="text-primary text-decoration-none">+1 (234) 567-890</a>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-geo-alt-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-2">Best Locations</h5>
+                            <p class="text-muted">We offer stays in prime areas — close to attractions, business hubs,
+                                and local experiences. Enjoy convenience without compromising on peace or style.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- WhatsApp Contact -->
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-center">
-                        <i class="bi-whatsapp fs-1 mb-3"></i>
-                        <h4 class="fw-medium">WhatsApp</h4>
-                        <p class="text-white-50">Chat with us directly on WhatsApp.</p>
-                        <a href="https://wa.me/1234567890" target="_blank"
-                            class="text-primary text-decoration-none">Message Us</a>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-currency-rupee fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-2">Great Prices</h5>
+                            <p class="text-muted">Get unbeatable deals and special discounts you won't find anywhere
+                                else. We make sure you enjoy the best value for every booking.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-4 py-lg-5 bg-white">
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-white">
         <div class="container px-4 px-xl-5">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="display-5 text-dark fw-900 fw-900 fw-900">What Our Customers Have to Say</h2>
+                <h2 class="fw-bold">Elevate your stay with exceptional comfort, service, and care.</h2>
             </div>
-            <!-- Main Testimonial -->
-            <div class="row gx-5 align-items-center justify-content-center mb-5 pb-5">
-                <div class="col-lg-4 text-center" data-aos="fade-right">
-                    <img src="./assets/images/LifterLMS-Review-Nick-Usborne.jpg"
-                        class="img-fluid rounded-circle shadow-lg" alt="Nick Osborne">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-gem fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-2">Luxury Hotels</h5>
+                            <p class="text-muted">Premium accommodations with world-class amenities and exceptional
+                                service.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-left">
-                    <blockquote class="fs-5">
-                        "I've used a number of course creation and delivery platforms over the years. And they were all
-                        fine... right up to the day when they weren't. The other tools aren't customizable. Now I host
-                        all my courses on LifterLMS. TOTALLY different experience, because I'm free to do things MY way.
-                        <br><br>
-                        Love it! Great support and community too."
-                        <footer class="blockquote-footer mt-3">
-                            Nick Usborne, <cite title="Source Title">Writing Instructor & Copywriter for Apple & The New
-                                York Times</cite>
-                        </footer>
-                    </blockquote>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-briefcase-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-2">Business Travel</h5>
+                            <p class="text-muted">Corporate housing solutions for extended stays and business trips.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-star-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-2">Special Occasions</h5>
+                            <p class="text-muted">Perfect venues for weddings, celebrations, and memorable events.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="row g-4 mt-1">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-house-check-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-2">Verified Properties</h5>
+                            <p class="text-muted">All properties are personally inspected and verified for quality
+                                standards.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-person-lines-fill fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-2">Concierge Service</h5>
+                            <p class="text-muted">Personal assistance for reservations, recommendations, and special
+                                requests.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-globe2 fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold mb-2">Global Network</h5>
+                            <p class="text-muted">Extensive portfolio of properties in major cities and destinations
+                                worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Ratings Section -->
-            <div class="bg-light rounded-3 py-5 px-4 mb-5" data-aos="zoom-in-up">
-                <div class="row gx-5 text-center">
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="text-warning mb-2 h4">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-half"></i>
-                        </div>
-                        <h4 class="h5 text-dark">4.7 / 5 Rating</h4>
-                        <p class="text-muted mb-0">WordPress.org</p>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="text-warning mb-2 h4">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <h4 class="h5 text-dark">5 / 5 Rating</h4>
-                        <p class="text-muted mb-0">G2</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="text-warning mb-2 h4">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <h4 class="h5 text-dark">4.9 / 5 Rating</h4>
-                        <p class="text-muted mb-0">Capterra</p>
-                    </div>
-                </div>
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container px-4 px-xl-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Pricing</h2>
             </div>
-
-            <!-- Bottom Testimonials -->
-            <div class="row gx-5">
-                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-card">
-                        <div class="testimonial-quote-icon">“</div>
-                        <h4 class="mb-3 text-dark">Amazing Functionality for Academic Courses</h4>
-                        <p class="text-muted">"LifterLMS provides a student interface that works directly from our
-                            website ensuring regular student interaction with the site itself and our social media. The
-                            LMS provides easy access to course materials, timetables, assessments and reporting.
-                            Combined with Google for education, LifterLMS makes the perfect online experience for
-                            teachers and students alike. Well done!"</p>
-                        <div class="d-flex align-items-center mt-4">
-                            <img src="./assets/images/ruairi80-150x150.jpg" style="width: 50px; height: 50px;"
-                                class="rounded-circle me-3" alt="ruairi80">
-                            <div>
-                                <div class="fw-bold">@ruairi80</div>
-                            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow pricing-card">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Basic Plan</h5>
+                            <div class="display-6 fw-bold mb-2">₹0 <span class="fs-6 fw-normal">/month</span></div>
+                            <div class="mb-3 text-muted">(Pay as you book)</div>
+                            <ul class="list-unstyled mb-4">
+                                <li>• Access to verified hotel listings</li>
+                                <li>• Standard customer support</li>
+                                <li>• Flexible date search</li>
+                                <li>• Instant booking confirmation</li>
+                                <li>• No hidden fees</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-card">
-                        <div class="testimonial-quote-icon">“</div>
-                        <h4 class="mb-3 text-dark">One Year and Big Life Changing Impact</h4>
-                        <p class="text-muted">"I've used LifterLMS for over a year, and I can say that everything they
-                            provided for the online learning industry is enormous. And I was able to get started for
-                            free. LifterLMS made my dreams come true, making it possible for me to provide high quality
-                            educational content used by hundreds of students in my country."</p>
-                        <div class="d-flex align-items-center mt-4">
-                            <img src="./assets/images/ruairi80-150x150.jpg" style="width: 50px; height: 50px;"
-                                class="rounded-circle me-3" alt="przembar">
-                            <div>
-                                <div class="fw-bold">@przembar</div>
-                            </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow pricing-card featured">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Plus Plan</h5>
+                            <div class="display-6 fw-bold mb-2">₹299 <span class="fs-6 fw-normal">/month</span></div>
+                            <div class="mb-3 text-muted">(Billed annually or ₹399 monthly)</div>
+                            <ul class="list-unstyled mb-4">
+                                <li>• Everything in Basic</li>
+                                <li>• Early access to deals and discounts</li>
+                                <li>• Free booking cancellation up to 48 hrs</li>
+                                <li>• Priority customer support</li>
+                                <li>• Save favorite stays for quick rebooking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow pricing-card">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold mb-2">Elite Plan</h5>
+                            <div class="display-6 fw-bold mb-2">₹799 <span class="fs-6 fw-normal">/month</span></div>
+                            <div class="mb-3 text-muted">(Billed annually or ₹999 monthly)</div>
+                            <ul class="list-unstyled mb-4">
+                                <li>• Everything in Plus</li>
+                                <li>• 10–20% off on all bookings</li>
+                                <li>• Dedicated travel concierge</li>
+                                <li>• Complimentary room upgrades (when available)</li>
+                                <li>• Last-minute check-in/out flexibility</li>
+                                <li>• Premium support with live chat</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -405,81 +265,61 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark text-white">
-        <div class="container px-4 px-xl-5">
-            <div class="row">
-                <!-- Column 1: About & Contact -->
-                <div class="col-lg-4 col-md-6 mb-5">
-                    <h5 class="fw-bolder mb-4" style="font-size: 1.5rem;">Navora</h5>
-                    <div class="mb-4">
-                        <h6 class="text-uppercase fw-bold">About Us</h6>
-                        <p class="text-white-50">We want to help bring talented students and unique startups together.
-                        </p>
-                    </div>
-                    <div>
-                        <h6 class="text-uppercase fw-bold">Contact Us</h6>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <a href="tel:+917200593059" class="footer-link d-flex align-items-center">
-                                    <i class="bi bi-telephone-fill me-2"></i> +91-7200593059
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@appysa.com" class="footer-link d-flex align-items-center">
-                                    <i class="bi bi-envelope-fill me-2"></i> info@appysa.com
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <footer class="pt-5 pb-3 bg-primary text-white position-relative overflow-visible" style="margin-top: 250px;">
+        <div class="container px-4 px-xl-5 position-relative">
+            <!-- Floating Contact Card inside Footer -->
 
-                <!-- Column 2: Helpful Links -->
-                <div class="col-lg-2 col-md-6 mb-5">
-                    <h6 class="text-uppercase fw-bold mb-4">Helpful Links</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="footer-link">Privacy Policy</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Terms and Conditions</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Support</a></li>
-                        <li class="mb-2"><a href="#" class="footer-link">Service</a></li>
-                        <li><a href="#" class="footer-link">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: App Downloads & Language -->
-                <div class="col-lg-6 col-md-12">
-                    <div class="row">
-                        <div class="col-md-6 mb-5 mb-md-0">
-                            <h6 class="text-uppercase fw-bold mb-4">Download Apps</h6>
-                            <div class="d-flex flex-column flex-sm-row flex-md-column gap-3">
-                                <a href="#"><img src="./assets/images/playstore.png" alt="Google Play" height="40"></a>
-                                <a href="#"><img src="./assets/images/appstore.png" alt="App Store" height="40"></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <h6 class="text-uppercase fw-bold mb-4">Choose Language</h6>
-                            <select class="form-select footer-select">
-                                <option selected>English</option>
-                                <option value="1">Spanish</option>
-                                <option value="2">French</option>
-                                <option value="3">German</option>
-                            </select>
-                        </div>
+            <div class="position-relative" style="height: 100px;">
+                <div class="contact-cta-card bg-white rounded-4 shadow-lg p-4 p-md-5 mx-auto text-center"
+                    style="max-width:900px; top: -220px;">
+                    <h2 class="fw-bold mb-3 text-dark">Take Control of Your Stay</h2>
+                    <p class="mb-4 text-muted">Book with confidence and enjoy personalized service, exclusive deals, and
+                        24/7 support. Your next adventure starts here.</p>
+                    <div class="mb-3">
+                        <div class="text-dark"><i class="bi bi-telephone-fill"></i> +91 12345 67890</div>
+                        <div class="text-dark"><i class="bi bi-envelope-fill"></i> support@alnuzala.com</div>
                     </div>
+                    <a href="mailto:support@alnuzala.com" class="btn btn-primary btn-lg">Contact Us</a>
                 </div>
             </div>
 
-            <hr class="text-white-50 my-4">
-
-            <div class="row align-items-center">
-                <div class="col-md-6 small">
-                    <p class="mb-3 mb-md-0 text-white-50">Copyright &copy; 2025 Navora. All rights reserved.</p>
+            <div class="row gy-4 align-items-start mt-4 pt-3">
+                <!-- Left: Logo, Apps -->
+                <div class="col-md-4">
+                    <a class="navbar-brand fw-bold fs-2" href="#hero">Alnuzala</a>
+                    <div class="fw-bold mb-2 mt-3">Download Apps</div>
+                    <div class="mb-3 d-flex gap-2">
+                        <img src="assets/images/playstore.png" alt="Google Play" style="height:40px;">
+                        <img src="assets/images/appstore.png" alt="App Store" style="height:40px;">
+                    </div>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="footer-social-icon"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="footer-social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="footer-social-icon"><i class="bi bi-twitter"></i></a>
+                <!-- Middle: Helpful Links -->
+                <div class="col-md-4">
+                    <div class="fw-bold mb-2">Helpful Links</div>
+                    <div class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></div>
+                    <div class="mb-2"><a href="#" class="text-white text-decoration-none">Terms And Conditions</a></div>
+                </div>
+                <!-- Right: Social, Language -->
+                <div class="col-md-4">
+                    <div class="fw-bold mb-2">Follow us</div>
+                    <div class="mb-3 d-flex gap-2">
+                        <a href="#" class="fs-3" aria-label="Facebook"><i class="bi bi-facebook"
+                                style="color:#1877f3;"></i></a>
+                        <a href="#" class="fs-3" aria-label="Instagram"><i class="bi bi-instagram"
+                                style="color:#e4405f;"></i></a>
+                        <a href="#" class="fs-3" aria-label="Twitter"><i class="bi bi-twitter"
+                                style="color:#1da1f2;"></i></a>
+                    </div>
+                    <div class="fw-bold mb-2">Choose Language</div>
+                    <select class="form-select w-auto" style="min-width:140px;">
+                        <option selected>English</option>
+                        <option>Arabic</option>
+                        <option>French</option>
+                    </select>
                 </div>
             </div>
+            <hr class="my-4 border-light">
+            <div class="text-center small">Copyright © 2025 Alnuzala. All rights reserved.</div>
         </div>
     </footer>
 
@@ -492,9 +332,10 @@
     <script>
         // Optionally, re-activate scrollspy on page load (for dynamic content)
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-            target: '#navbarNav',
+            target: '#mainNavbar',
             offset: 80
         });
+        AOS.init();
     </script>
 </body>
 

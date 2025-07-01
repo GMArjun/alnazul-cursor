@@ -7,7 +7,8 @@ html {
 body {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
-  color: #495057;
+  color: #222;
+  background: #fff;
   line-height: 1.6;
 }
 
@@ -19,6 +20,117 @@ h5,
 h6 {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 900;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.navbar {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+.btn-primary {
+  background: #4f3cc9;
+  border: none;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  transition: background 0.2s;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: rgb(64.556626506, 47.7542168675, 172.4457831325);
+}
+
+#hero {
+  background: #f5f6fa;
+}
+#hero .display-4 {
+  color: #222;
+}
+#hero .text-primary {
+  color: #4f3cc9 !important;
+}
+
+.card {
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 16px rgba(79, 60, 201, 0.04);
+}
+
+.pricing-card {
+  border: 2px solid #f7f2ff;
+  background: #fff;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.pricing-card:hover, .pricing-card.featured {
+  border-color: #4f3cc9;
+  box-shadow: 0 4px 32px rgba(79, 60, 201, 0.1);
+  background: #f7f2ff;
+}
+.pricing-card .display-6 {
+  color: #4f3cc9;
+}
+
+.pricing-card.featured {
+  border-width: 3px;
+  background: #f7f2ff;
+}
+
+section h2 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background: #4f3cc9;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: rgb(151.0963855422, 139.8795180723, 223.1204819277);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-cta-section {
+  margin-bottom: -60px;
+}
+
+.contact-cta-card {
+  box-shadow: 0 8px 32px rgba(79, 60, 201, 0.12);
+  border-radius: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+footer.bg-primary {
+  background: #4f3cc9 !important;
+  color: #fff;
+}
+footer.bg-primary a {
+  color: #fff;
+  text-decoration: none;
+}
+footer.bg-primary a:hover {
+  color: rgb(151.0963855422, 139.8795180723, 223.1204819277);
+  text-decoration: underline;
+}
+footer.bg-primary .fw-bold {
+  color: #fff;
+}
+footer.bg-primary .small, footer.bg-primary .text-white {
+  color: #e0e0e0 !important;
+}
+footer.bg-primary hr {
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /*# sourceMappingURL=custom.css.map */
