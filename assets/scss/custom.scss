@@ -334,7 +334,7 @@ $pricing-shadow: 0 4px 24px rgba(79, 60, 201, 0.07);
 $pricing-badge-radius: 1.5rem;
 $pricing-badge-font: 0.98rem;
 $pricing-green: #22b573;
-$pricing-blue: #1877f3;
+$pricing-blue: #4f3cc9;
 
 .bg-pricing {
   background: $pricing-bg;
@@ -462,4 +462,8 @@ $pricing-blue: #1877f3;
       font-size: 0.9rem;
     }
   }
+}
+
+.text-primary{
+  color: $primary !important
 }
