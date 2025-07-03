@@ -49,6 +49,11 @@ section {
 
 .navbar {
   box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+  .nav-link {
+    &.active {
+      font-weight: 600;
+    }
+  }
 }
 
 .btn-primary {
@@ -65,7 +70,6 @@ section {
 
 // Hero section
 #hero {
-  background: $secondary;
   .display-4 {
     color: $text-dark;
   }
@@ -152,4 +156,166 @@ footer.bg-primary {
   .fw-bold { color: #fff; }
   .small, .text-white { color: #e0e0e0 !important; }
   hr { border-color: rgba(255,255,255,0.2); }
+}
+
+// Why Book With Us Section - Modern Card Design
+.why-feature-card {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(79, 60, 201, 0.04);
+  border: 1.5px solid #f0f0f5;
+  transition: box-shadow 0.2s, border 0.2s, background 0.2s, color 0.2s;
+  margin-bottom: 1.25rem;
+  color: $text-dark;
+  h5, p { color: $text-dark; }
+  .why-feature-icon {
+    background: $secondary;
+    color: $primary;
+    transition: background 0.2s, color 0.2s;
+  }
+  &:hover {
+    background: $primary;
+    color: #fff;
+    border-color: $primary;
+    h5, p { color: #fff; }
+    .why-feature-icon {
+      background: #fff;
+      color: $primary;
+    }
+  }
+}
+.why-feature-card:last-child {
+  margin-bottom: 0;
+}
+.why-feature-card-highlight {
+  // No special background or hover, just for targeting the first card if needed
+}
+.why-feature-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $secondary;
+  border-radius: 12px;
+  font-size: 1.7rem;
+  color: $primary;
+}
+.why-feature-card-highlight .why-feature-icon {
+  background: #fff;
+  color: $primary;
+}
+
+// Right image and floating card
+.why-img-wrapper {
+  max-width: 370px;
+}
+.why-main-img {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(79, 60, 201, 0.10);
+}
+.why-floating-card {
+  left: 50%;
+  bottom: -32px;
+  transform: translateX(-50%);
+  min-width: 220px;
+  box-shadow: 0 4px 24px rgba(79, 60, 201, 0.10);
+  z-index: 2;
+}
+.why-float-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: $secondary;
+  border-radius: 50%;
+  color: $primary;
+  font-size: 1.3rem;
+}
+.why-floating-card .text-primary {
+  color: $primary !important;
+}
+
+@media (max-width: 991.98px) {
+  .why-img-wrapper {
+    max-width: 100%;
+  }
+  .why-floating-card {
+    position: static !important;
+    transform: none;
+    margin-top: 1.5rem;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+// Services Section - Simple Grid Design
+.service-simple {
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  text-align: left;
+}
+.service-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $secondary;
+  border-radius: 12px;
+  font-size: 1.7rem;
+  color: $primary;
+  margin-bottom: 1rem;
+}
+@media (max-width: 991.98px) {
+  .service-simple {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.min-card-height {
+  min-height: 600px;
+}
+
+#mainNavbar{
+  min-height: 77px;
+}
+
+// Hero Section with Background Image
+.hero-bg-image {
+  position: relative;
+  min-height: 60vh;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+}
+.hero-bg-image::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.hero-bg-image .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-bg-image h1,
+.hero-bg-image p {
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.25);
+}
+@media (max-width: 767.98px) {
+  .hero-bg-image {
+    min-height: 40vh;
+    height: 50vh;
+  }
+  .hero-bg-image h1 {
+    font-size: 2rem;
+  }
 }

@@ -32,10 +32,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto column-gap-3">
-                    <li class="nav-item"><a class="nav-link fw-bold" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="#why">Why Us</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#why">Why Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                 </ul>
                 <a class="btn btn-primary ms-lg-3" href="#contact">Contact</a>
             </div>
@@ -43,39 +43,24 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="py-5 mt-5 bg-light">
-        <div class="container px-4 px-xl-5">
-            <div class="row align-items-center gy-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h1 class="display-4 fw-bold mb-3">Find Your Perfect Stay. <span class="text-primary">Anywhere,
-                            Anytime.</span></h1>
-                    <p class="lead text-muted mb-4">Discover handpicked hotels, resorts, and vacation homes for every
-                        journey — from weekend getaways to luxury escapes.</p>
-                    <a href="#contact" class="btn btn-primary btn-lg">Contact</a>
-                </div>
-                <div class="col-lg-6 text-center" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-                        alt="Happy travelers" class="img-fluid rounded-4 shadow">
-                </div>
-            </div>
+    <section id="hero" class="hero-bg-image min-card-height d-flex align-items-center justify-content-center text-center" style="margin-top: 77px;">
+        <div class="container position-relative z-2">
+            <h1 class="display-4 fw-bold mb-3 text-white">Find Your Perfect Stay. <span class="text-primary">Anywhere, Anytime.</span></h1>
+            <p class="lead text-white mb-4">Discover handpicked hotels, resorts, and vacation homes for every journey — from weekend getaways to luxury escapes.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Contact</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 bg-white">
+    <section id="about" class="py-5 bg-white min-card-height d-flex align-items-center">
         <div class="container px-4 px-xl-5">
-            <div class="row align-items-center gy-5">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
-                        alt="About Alnuzala" class="img-fluid rounded-4 shadow">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="About Alnuzala" class="img-fluid rounded-4 shadow">
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <h2 class="fw-bold mb-3">About Alnuzala</h2>
-                    <p class="mb-4">At Alnuzala, we believe your travel experience begins the moment you search for a
-                        place to stay. With years of experience in the hospitality industry, we've earned the trust of
-                        thousands of travelers by offering clean, secure, and carefully selected hotels that meet high
-                        standards of comfort and quality. Our award-winning customer service team is available 24/7 to
-                        assist you with anything you need — from booking to check-out.</p>
+                    <p class="mb-4">At Alnuzala, we believe your travel experience begins the moment you search for a place to stay. With years of experience in the hospitality industry, we've earned the trust of thousands of travelers by offering clean, secure, and carefully selected hotels that meet high standards of comfort and quality. Our award-winning customer service team is available 24/7 to assist you with anything you need — from booking to check-out.</p>
                     <div class="d-flex gap-4">
                         <div>
                             <h3 class="text-primary fw-bold mb-0">5+</h3>
@@ -92,40 +77,57 @@
     </section>
 
     <!-- Why Book With Us Section -->
-    <section id="why" class="py-5 bg-light">
+    <section id="why" class="py-5 bg-light min-card-height d-flex align-items-center">
         <div class="container px-4 px-xl-5">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Why Book With Us?</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-patch-check-fill fs-1 text-primary mb-3"></i>
-                            <h5 class="fw-bold mb-2">Verified Listings</h5>
-                            <p class="text-muted">Every hotel and home is carefully reviewed and approved to ensure
-                                quality, safety, and comfort. You can book confidently knowing you're choosing from
-                                trusted stays only.</p>
+            <div class="row align-items-center gy-5">
+                <!-- Left: Heading and Feature Cards -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Why Book With Us?</h2>
+                    <div
+                        class="why-feature-card why-feature-card-highlight mb-3 d-flex align-items-start p-4 rounded-4">
+                        <div class="why-feature-icon flex-shrink-0 me-3">
+                            <i class="bi bi-patch-check-fill fs-2"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Verified Listings</h5>
+                            <p class="mb-0">Every hotel and home is carefully reviewed and approved to ensure quality,
+                                safety, and comfort. You can book confidently knowing you're choosing from trusted stays
+                                only.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature-card mb-3 d-flex align-items-start p-4 rounded-4">
+                        <div class="why-feature-icon flex-shrink-0 me-3">
+                            <i class="bi bi-geo-alt-fill fs-2"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Best Locations</h5>
+                            <p class="mb-0">We offer stays in prime areas — close to attractions, business hubs, and
+                                local experiences. Enjoy convenience without compromising on peace or style.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature-card d-flex align-items-start p-4 rounded-4">
+                        <div class="why-feature-icon flex-shrink-0 me-3">
+                            <i class="bi bi-currency-rupee fs-2"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Great Prices</h5>
+                            <p class="mb-0">Get unbeatable deals and special discounts you won't find anywhere else. We
+                                make sure you enjoy the best value for every booking.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-geo-alt-fill fs-1 text-primary mb-3"></i>
-                            <h5 class="fw-bold mb-2">Best Locations</h5>
-                            <p class="text-muted">We offer stays in prime areas — close to attractions, business hubs,
-                                and local experiences. Enjoy convenience without compromising on peace or style.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-currency-rupee fs-1 text-primary mb-3"></i>
-                            <h5 class="fw-bold mb-2">Great Prices</h5>
-                            <p class="text-muted">Get unbeatable deals and special discounts you won't find anywhere
-                                else. We make sure you enjoy the best value for every booking.</p>
+                <!-- Right: Image with Floating Card -->
+                <div class="col-lg-6 text-center position-relative why-img-col">
+                    <div class="why-img-wrapper d-inline-block position-relative">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                            alt="Happy travelers" class="img-fluid rounded-4 why-main-img shadow">
+                        <div class="why-floating-card bg-white shadow rounded-4 p-3 px-4 text-start position-absolute">
+                            <div class="fw-bold mb-2 text-primary">Your Benefits</div>
+                            <div class="d-flex gap-3">
+                                <span class="why-float-icon"><i class="bi bi-patch-check-fill"></i></span>
+                                <span class="why-float-icon"><i class="bi bi-geo-alt-fill"></i></span>
+                                <span class="why-float-icon"><i class="bi bi-currency-rupee"></i></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,70 +136,53 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-5 bg-white">
+    <section id="services" class="py-5 bg-white d-flex align-items-center" style="min-height: 700px;">
         <div class="container px-4 px-xl-5">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Elevate your stay with exceptional comfort, service, and care.</h2>
+                <h2 class="fw-bold">Elevating Your Well-being Through Exceptional Services</h2>
             </div>
             <div class="row g-4">
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-gem fs-1 text-primary mb-3"></i>
-                            <h5 class="fw-bold mb-2">Luxury Hotels</h5>
-                            <p class="text-muted">Premium accommodations with world-class amenities and exceptional
-                                service.</p>
-                        </div>
+                    <div class="service-simple h-100 p-2">
+                        <div class="service-icon mb-3"><i class="bi bi-gem"></i></div>
+                        <h5 class="fw-bold mb-2">Luxury Hotels</h5>
+                        <p class="mb-0">Premium accommodations with world-class amenities and exceptional service.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-briefcase-fill fs-1 text-primary mb-3"></i>
-                            <h5 class="fw-bold mb-2">Business Travel</h5>
-                            <p class="text-muted">Corporate housing solutions for extended stays and business trips.</p>
-                        </div>
+                    <div class="service-simple h-100 p-2">
+                        <div class="service-icon mb-3"><i class="bi bi-briefcase-fill"></i></div>
+                        <h5 class="fw-bold mb-2">Business Travel</h5>
+                        <p class="mb-0">Corporate housing solutions for extended stays and business trips.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-star-fill fs-1 text-primary mb-3"></i>
-                            <h5 class="fw-bold mb-2">Special Occasions</h5>
-                            <p class="text-muted">Perfect venues for weddings, celebrations, and memorable events.</p>
-                        </div>
+                    <div class="service-simple h-100 p-2">
+                        <div class="service-icon mb-3"><i class="bi bi-star-fill"></i></div>
+                        <h5 class="fw-bold mb-2">Special Occasions</h5>
+                        <p class="mb-0">Perfect venues for weddings, celebrations, and memorable events.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row g-4 mt-1">
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-house-check-fill fs-1 text-primary mb-3"></i>
-                            <h5 class="fw-bold mb-2">Verified Properties</h5>
-                            <p class="text-muted">All properties are personally inspected and verified for quality
-                                standards.</p>
-                        </div>
+                    <div class="service-simple h-100 p-2">
+                        <div class="service-icon mb-3"><i class="bi bi-house-check-fill"></i></div>
+                        <h5 class="fw-bold mb-2">Verified Properties</h5>
+                        <p class="mb-0">All properties are personally inspected and verified for quality standards.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-person-lines-fill fs-1 text-primary mb-3"></i>
-                            <h5 class="fw-bold mb-2">Concierge Service</h5>
-                            <p class="text-muted">Personal assistance for reservations, recommendations, and special
-                                requests.</p>
-                        </div>
+                    <div class="service-simple h-100 p-2">
+                        <div class="service-icon mb-3"><i class="bi bi-person-lines-fill"></i></div>
+                        <h5 class="fw-bold mb-2">Concierge Service</h5>
+                        <p class="mb-0">Personal assistance for reservations, recommendations, and special requests.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="bi bi-globe2 fs-1 text-primary mb-3"></i>
-                            <h5 class="fw-bold mb-2">Global Network</h5>
-                            <p class="text-muted">Extensive portfolio of properties in major cities and destinations
-                                worldwide.</p>
-                        </div>
+                    <div class="service-simple h-100 p-2">
+                        <div class="service-icon mb-3"><i class="bi bi-globe2"></i></div>
+                        <h5 class="fw-bold mb-2">Global Network</h5>
+                        <p class="mb-0">Extensive portfolio of properties in major cities and destinations worldwide.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -205,7 +190,7 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="py-5 bg-light">
+    <section id="pricing" class="py-5 bg-light min-card-height d-flex align-items-center">
         <div class="container px-4 px-xl-5">
             <div class="text-center mb-5" data-aos="fade-up">
                 <h2 class="fw-bold">Pricing</h2>
@@ -213,7 +198,7 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 border-0 shadow pricing-card">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center py-5">
                             <h5 class="fw-bold mb-2">Basic Plan</h5>
                             <div class="display-6 fw-bold mb-2">₹0 <span class="fs-6 fw-normal">/month</span></div>
                             <div class="mb-3 text-muted">(Pay as you book)</div>
@@ -229,7 +214,7 @@
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100 border-0 shadow pricing-card featured">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center py-5">
                             <h5 class="fw-bold mb-2">Plus Plan</h5>
                             <div class="display-6 fw-bold mb-2">₹299 <span class="fs-6 fw-normal">/month</span></div>
                             <div class="mb-3 text-muted">(Billed annually or ₹399 monthly)</div>
@@ -245,7 +230,7 @@
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card h-100 border-0 shadow pricing-card">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center py-5">
                             <h5 class="fw-bold mb-2">Elite Plan</h5>
                             <div class="display-6 fw-bold mb-2">₹799 <span class="fs-6 fw-normal">/month</span></div>
                             <div class="mb-3 text-muted">(Billed annually or ₹999 monthly)</div>
@@ -269,16 +254,25 @@
         <div class="container px-4 px-xl-5 position-relative">
             <!-- Floating Contact Card inside Footer -->
             <div id="contact" class="position-relative" style="height: 100px;">
-                <div class="contact-cta-card bg-white rounded-4 shadow-lg p-4 p-md-5 mx-auto text-center"
+                <div class="contact-cta-card bg-white rounded-4 shadow-lg p-3 p-lg-4 p-md-5 mx-auto text-center"
                     style="max-width:900px; top: -220px;">
                     <h2 class="fw-bold mb-3 text-dark">Take Control of Your Stay</h2>
                     <p class="mb-4 text-muted">Book with confidence and enjoy personalized service, exclusive deals, and
                         24/7 support. Your next adventure starts here.</p>
-                    <div class="mb-3">
-                        <div class="text-dark"><i class="bi bi-telephone-fill"></i> +91 12345 67890</div>
-                        <div class="text-dark"><i class="bi bi-envelope-fill"></i> support@alnuzala.com</div>
+                    <div class="mb-3 d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="tel:+911234567890">
+                            <button class="btn btn-primary text-decoration-none text-white px-3 fw-normal">
+                                <i class="bi bi-telephone-fill me-2"></i>
+                                +91 12345 67890
+                            </button>
+                        </a>
+                        <a href="mailto:support@alnuzala.com">
+                            <button class="btn btn-primary text-decoration-none text-white px-3 fw-normal">
+                                <i class="bi bi-envelope-fill me-2"></i>
+                                support@alnuzala.com
+                            </button>
+                        </a>
                     </div>
-                    <a href="mailto:support@alnuzala.com" class="btn btn-primary btn-lg">Contact Us</a>
                 </div>
             </div>
 
