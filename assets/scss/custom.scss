@@ -410,19 +410,15 @@ $pricing-blue: #1877f3;
     margin-top: auto;
   }
   &.featured .btn {
-    background: $pricing-blue;
     color: #fff;
     border: none;
-    &:hover {
-      background: darken($pricing-blue, 8%);
-    }
   }
   &:not(.featured) .btn {
-    border: 2px solid $pricing-blue;
-    color: $pricing-blue;
+    border: 2px solid $primary;
+    color: $primary;
     background: #fff;
     &:hover {
-      background: $pricing-blue;
+      background: $primary;
       color: #fff;
     }
   }

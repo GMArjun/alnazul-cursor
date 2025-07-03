@@ -385,20 +385,16 @@ footer.bg-primary hr {
   margin-top: auto;
 }
 .pricing-card.featured .btn {
-  background: #1877f3;
   color: #fff;
   border: none;
 }
-.pricing-card.featured .btn:hover {
-  background: rgb(11.1703703704, 99.6024691358, 215.0296296296);
-}
 .pricing-card:not(.featured) .btn {
-  border: 2px solid #1877f3;
-  color: #1877f3;
+  border: 2px solid #4f3cc9;
+  color: #4f3cc9;
   background: #fff;
 }
 .pricing-card:not(.featured) .btn:hover {
-  background: #1877f3;
+  background: #4f3cc9;
   color: #fff;
 }
 .pricing-card .pricing-badge {
