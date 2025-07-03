@@ -312,5 +312,134 @@ footer.bg-primary hr {
     font-size: 2rem;
   }
 }
+.bg-pricing {
+  background: #f7f8fa;
+}
+
+.pricing-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(79, 60, 201, 0.07);
+  border: none;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+.pricing-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 100%;
+}
+.pricing-card .list-unstyled li {
+  font-size: 14px;
+  text-align: left;
+}
+.pricing-card h5, .pricing-card .display-6, .pricing-card .mb-3, .pricing-card .mb-2, .pricing-card .mb-4, .pricing-card .mb-0 {
+  width: 100%;
+  text-align: center;
+}
+.pricing-card .display-6 {
+  color: #1877f3;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.pricing-card .fs-6 {
+  color: #888;
+  font-weight: 500;
+}
+.pricing-card .mb-3.text-muted, .pricing-card .mb-3.text-muted span {
+  color: #888 !important;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.pricing-card ul {
+  margin: 0 auto 1.5rem auto;
+  padding: 0;
+  text-align: left;
+}
+.pricing-card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.08rem;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+.pricing-card ul li i {
+  color: #22b573;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+.pricing-card .btn {
+  border-radius: 2rem;
+  padding: 0.85rem 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: auto;
+}
+.pricing-card.featured .btn {
+  background: #1877f3;
+  color: #fff;
+  border: none;
+}
+.pricing-card.featured .btn:hover {
+  background: rgb(11.1703703704, 99.6024691358, 215.0296296296);
+}
+.pricing-card:not(.featured) .btn {
+  border: 2px solid #1877f3;
+  color: #1877f3;
+  background: #fff;
+}
+.pricing-card:not(.featured) .btn:hover {
+  background: #1877f3;
+  color: #fff;
+}
+.pricing-card .pricing-badge {
+  display: block;
+  width: 80%;
+  margin: 0 auto 1.2rem auto;
+  border-radius: 1.5rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  padding: 0.5em 0;
+  background: #f5f6fa;
+  color: #888;
+}
+.pricing-card .pricing-badge.featured {
+  background: #1877f3;
+  color: #fff;
+}
+.pricing-card .pricing-badge.premium {
+  background: #ffc107;
+  color: #222;
+}
+
+@media (max-width: 991.98px) {
+  .pricing-card {
+    margin-bottom: 2rem;
+  }
+  .pricing-card .pricing-badge {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .pricing-card {
+    min-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .pricing-card .display-6 {
+    font-size: 2rem;
+  }
+  .pricing-card .pricing-badge {
+    font-size: 0.9rem;
+  }
+}
 
 /*# sourceMappingURL=custom.css.map */
