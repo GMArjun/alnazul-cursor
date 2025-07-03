@@ -2,7 +2,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 78px;
+  scroll-padding-top: 77px;
   overflow-x: hidden;
 }
 
@@ -247,6 +247,18 @@ footer.bg-primary {
     left: auto;
     bottom: auto;
   }
+  h1, .display-1, .display-3, .display-4 {
+    font-size: 1.7rem;
+  }
+  h2, .display-2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  h4, h5, h6 {
+    font-size: 1rem;
+  }
 }
 
 // Services Section - Simple Grid Design
@@ -283,8 +295,7 @@ footer.bg-primary {
 // Hero Section with Background Image
 .hero-bg-image {
   position: relative;
-  min-height: 60vh;
-  height: 80vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,10 +322,6 @@ footer.bg-primary {
   text-shadow: 0 2px 16px rgba(0,0,0,0.25);
 }
 @media (max-width: 767.98px) {
-  .hero-bg-image {
-    min-height: 40vh;
-    height: 50vh;
-  }
   .hero-bg-image h1 {
     font-size: 2rem;
   }
